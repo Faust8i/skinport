@@ -1,0 +1,7 @@
+CREATE DATABASE skinport;
+\c skinport
+
+CREATE TABLE items (id SERIAL PRIMARY KEY, market_hash_name VARCHAR(150), currency VARCHAR(3), suggested_price REAL, item_page VARCHAR(200), market_page VARCHAR(200), min_price REAL, max_price REAL, mean_price REAL, quantity INT, created_at INT, updated_at INT);
+
+INSERT INTO items (market_hash_name, currency, suggested_price, item_page, market_page, min_price, max_price, mean_price, quantity, created_at, updated_at) VALUES ('AK-47 | Aquamarine Revenge (Battle-Scarred)', 'EUR', '13.18', 'https://skinport.com/item/csgo/ak-47-aquamarine-revenge-battle-scarred', 'https://skinport.com/market/730?cat=Rifle&item=Aquamarine+Revenge', '11.33', '18.22', '12.58', '25', '1535988253', '1568073728'
+), ('★ M9 Bayonet | Fade (Factory New)', 'EUR', '319.11', 'https://skinport.com/item/csgo/m9-bayonet-fade-factory-new', 'https://skinport.com/market/730?cat=Knife&item=Fade', null, null, null, '0', '1535988302', '1568073725');
